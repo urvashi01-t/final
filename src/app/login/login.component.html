@@ -1,0 +1,17 @@
+<div class="login-container">
+  <div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <div class="form-group">
+        <input type="text" id="id" name="id" [(ngModel)]  = "id" placeholder="ID" required>
+                <button type="button" (click)="generateOTP()" class="generate-otp-button"> verify</button>
+
+      </div>
+      <div class="form-group">
+        <input type="text" id="otp" name="otp" [(ngModel)]= "otp" placeholder="OTP" required>
+      </div>
+      <button type="submit" (click)="login()">Login</button>
+    </form>
+  </div>
+</div>
+

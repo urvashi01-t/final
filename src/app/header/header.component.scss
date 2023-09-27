@@ -1,0 +1,29 @@
+
+/* Style the navigation items to look like buttons */
+.nav-item {
+  margin-right: 10px; /* Add some spacing between items */
+  border: 2px solid #0c0c0c; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  padding: 5px 10px; /* Padding for buttons */
+}
+
+/* Change the text color of the navigation links */
+.nav-link {
+  color: #111111;
+  text-decoration: solid; 
+}
+
+/* Style the dropdown select element */
+#bills {
+//   border: 2px solid #3498db; /* Border color */
+  border-radius: 2px; /* Rounded corners */
+  padding: 5px; /* Padding for select element */
+  background-color: #fff; /* Background color */
+  color: #0e0e0e; /* Text color */
+}
+
+/* Style the form control items within the select element */
+#bills option {
+  background-color: #fff; /* Background color */
+  color: #0c0c0c; /* Text color */
+}

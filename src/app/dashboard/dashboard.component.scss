@@ -1,0 +1,97 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+// app-header {
+//   /* Add styles for the header component */
+// }
+
+// header {
+//   background-color: #333;
+//   color: #fff;
+//   padding: 1rem;
+//   text-align: center;
+
+//   nav {
+//     a {
+//       color: #fff;
+//       text-decoration: none;
+//       margin: 0 1rem;
+//       font-size: 1.2rem;
+//     }
+//   }
+// }
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1200px;
+    width: 100%;
+    padding: 1rem;
+
+    .widget {
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      border-radius: 5px;
+      flex: 1;
+      min-width: 300px;
+a{
+  color: #000;
+}
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+aside {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  min-width: 250px;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  /* Apply styles to the app-header component */
+app-header {
+  display: flex;
+  align-items: center; /* Vertically align the image and text */
+}
+
+/* Style the logo image */
+app-header img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 10px; /* Add spacing to the right of the image */
+}
+
+/* Style the text next to the logo */
+app-header h1 {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  margin: 0; /* Remove default margin */
+}
+
+}

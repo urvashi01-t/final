@@ -1,0 +1,37 @@
+/* Custom table styles */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.custom-table th{
+    background-color: #333; /* Blue color */
+  color: #fff;
+  font-weight: bold;
+}
+.custom-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Style the "Pay Now" button */
+.btn-success {
+  background-color: #28a745; /* Green color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Darker green color on hover */
+}
+.prev{
+text-align: center;
+padding: 10px;
+margin: 5px;
+}

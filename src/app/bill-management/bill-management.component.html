@@ -1,0 +1,42 @@
+  <h2>Bill</h2>
+<div class="container">
+  <h2>ADD Customer Bills</h2>
+  <button class="btn btn-primary" routerLink="/addBills">Generate Bill</button>
+</div>
+
+<div class="container mt-4">
+  <table class="table table-striped" name="bills">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Customer Id</th>
+        <th>Phone Number</th>
+        <th>Rate</th>
+        <th>Discount</th>
+        <th>Amount</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cust of unpaidBills">
+        <td>{{ cust.billId }}</td>
+        <td>{{ cust.customerId.name }}</td>
+        <td>{{ cust.customerId.customerId }}</td>
+        <td>{{ cust.customerId.phoneNumber }}</td>
+        <td>{{ cust.paymentModeId.rate }}</td>
+        <td>{{ cust.paymentModeId.discountPercentage }}</td>
+        <td>{{ cust.amount }}</td>
+        <td>{{ cust.status }}</td>
+        <td>
+          <button class="btn btn-primary btn-lg" (click)="navigateToChoicePayment(cust.customerId.customerId)">Invoice</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="prev">
+        <button><a class="nav-link" routerLink="/dashboard">back</a></button>
+
+</div>

@@ -1,0 +1,34 @@
+
+<div class="container">
+  <h1>Customer List</h1>
+  
+  <!-- <div class="actions">
+    <button class="btn btn-primary" (click)="AddEmployee()" routerLink="/addCustomer">Add Customer</button>
+    <button class="btn btn-primary float-right" routerLink="/addViaCSV">Add Customer via CSV</button>
+  </div> -->
+<div class="actions">
+    <button class="btn btn-primary" (click)="AddEmployee()" routerLink="/addCustomer"style="background-color: #333; color: white; border-color: #333;">Add Customer</button>
+    <button class="btn btn-primary float-right" routerLink="/addViaCSV" style="background-color:#333; color: white; border-color: #333;">Add Customer via CSV</button>
+  </div>
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>ID</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cust of paidBills">
+        <td>{{ cust.name }}</td>
+        <td>{{ cust.customerId }}</td>
+        <td>{{ cust.email }}</td>
+        <td>{{ cust.phoneNumber }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="prev">
+    <button><a class="nav-link" routerLink="/dashboard">back</a></button>
+</div>

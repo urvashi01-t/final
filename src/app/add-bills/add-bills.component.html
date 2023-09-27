@@ -1,0 +1,49 @@
+<p>add-bills works!</p>
+<!-- app-bill-form.component.html -->
+
+<div class="container ">
+  <h2>Add Bill</h2>
+  <form (ngSubmit)="submitForm()" [formGroup]="billForm" >
+    <div class="form-group">
+      <label for="startDate">Start Date</label>
+      <input type="date" class="form-control" id="startDate" formControlName="startDate" required>
+    </div>
+    <div class="form-group">
+      <label for="endDate">End Date</label>
+      <input type="date" class="form-control" id="endDate" formControlName="endDate" required>
+    </div>
+    <div class="form-group">
+      <label for="dueDate">Due Date</label>
+      <input type="date" class="form-control" id="dueDate" formControlName="dueDate" required>
+    </div>
+    <div class="form-group">
+      <label for="consumedUnit">Consumed Unit</label>
+      <input type="number" class="form-control" id="consumedUnit" formControlName="consumedUnit" required>
+    </div>
+    <div class="form-group">
+      <label for="amount">Amount</label>
+      <input type="number" class="form-control" id="amount" formControlName="amount" required>
+    </div>
+    <div class="form-group">
+      <label for="status">Status</label>
+      <input type="text" class="form-control" id="status" formControlName="status" required>
+    </div>
+    <div class="form-group">
+      <label for="month">Month</label>
+      <input type="text" class="form-control" id="month" formControlName="month" required>
+    </div>
+    <div class="form-group">
+      <label for="totalamount">Total Amount</label>
+      <input type="number" class="form-control" id="totalamount" formControlName="totalamount" required>
+    </div>
+    <div class="form-group">
+      <label for="customerId">Customer ID</label>
+      <input type="number" class="form-control" id="customerId" formControlName="customerId.customerId" required>
+    </div>
+    <button type="submit" class="btn btn-primary" style="background: #333 !important; border: #333; margin-top: 5px;">Submit</button>
+  </form>
+</div>
+<div class="prev">
+          <button><a class="nav-link" routerLink="/bill-management">back</a></button>
+
+</div>

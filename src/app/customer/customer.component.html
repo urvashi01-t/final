@@ -1,0 +1,32 @@
+<p>customer works!</p>
+<div class="container">
+    <table class="table table-bordered table-hover">
+
+   <table class="table table-striped" name ="bills">
+    <thead>
+        <tr>
+            <th >ID</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+              <th>consumedUnit</th>
+                <th>totalAmount</th>
+                  <th>startDate</th>
+                    <th>endDate</th>
+                      <th>PaymentModes</th>
+                        <th>status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cust of paidBills">
+           
+            <td>{{cust.customerId.customerId}}</td>
+             <td>{{cust.customerId.name}}</td>
+            <td>{{cust.customerId.phoneNumber}}</td>
+            <td>{{cust.customerId.email}}</td>
+        </tr>
+    </tbody>
+  </table>       
+   <td>
+</table>
+</div>
